@@ -1,2 +1,3 @@
-# recomendeme
-API baseada em Lumen para recomendação de produtos com baseado em grafos
+# Recomende Me
+
+API baseada em PHP Lumen para recomendação de produtos baseado em grafos

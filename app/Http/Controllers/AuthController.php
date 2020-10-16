@@ -34,7 +34,7 @@ class AuthController extends Controller
         }
     }
 
-    public function login(Request $request)
+    public function token(Request $request)
     {
         //validate incoming request 
         $this->validate($request, [
@@ -48,9 +48,22 @@ class AuthController extends Controller
                 'password'
             ]
         );
+        try {
+            if (! $token = Auth::attempt($credentials)) {
+                return response()->json(['message' => 'Unauthorized'], 401);
+            }
+        } catch (\Tymon\JWTAuth\Exceptions\TokenExpiredException $e) {
 
-        if (! $token = Auth::attempt($credentials)) {
-            return response()->json(['message' => 'Unauthorized'], 401);
+            return response()->json(['token_expired'], 500);
+
+        } catch (\Tymon\JWTAuth\Exceptions\TokenInvalidException $e) {
+
+            return response()->json(['token_invalid'], 500);
+
+        } catch (\Tymon\JWTAuth\Exceptions\JWTException $e) {
+
+            return response()->json(['token_absent' => $e->getMessage()], 500);
+
         }
 
         return $this->respondWithToken($token);

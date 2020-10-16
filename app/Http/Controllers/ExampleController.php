@@ -15,7 +15,7 @@ class ExampleController extends Controller
     }
 
     public function show(){
-        abort(403, 'Forbidden');
-        return 'shjo';
+        //abort(403, 'Forbidden');
+        return 'shhwo';
     }
 }

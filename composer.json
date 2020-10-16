@@ -1,7 +1,7 @@
 {
     "name": "laravel/lumen",
-    "description": "The Laravel Lumen Framework.",
-    "keywords": ["framework", "laravel", "lumen"],
+    "description": "INF 332 - Hackathon",
+    "keywords": ["framework", "laravel", "lumen", "hackathon", "unicamp", "engenharia de software"],
     "license": "MIT",
     "type": "project",
     "require": {

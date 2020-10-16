@@ -17,16 +17,15 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-
-
 $router->get('/testeController', 'ExampleController@show');
 
-$router->group(['prefix' => 'api'], function () use ($router) {
+$router->group(['prefix' => 'api/v1'], function () use ($router) {
    // ->/api/register
     $router->post('register', 'AuthController@register');
 
-    $router->post('login', 'AuthController@login');
-
+    $router->post('token', 'AuthController@token');
+    // alterrar para token
+    
     $router->get('/drop', 'AuthController@dropUser');
 
     // Matches "/api/profile

@@ -20,11 +20,10 @@ $router->get('/', function () use ($router) {
 $router->get('/testeController', 'ExampleController@show');
 
 $router->group(['prefix' => 'api/v1'], function () use ($router) {
-   // ->/api/register
+   // ->/api/v1/register
     $router->post('register', 'AuthController@register');
 
     $router->post('token', 'AuthController@token');
-    // alterrar para token
     
     $router->get('/drop', 'AuthController@dropUser');
 

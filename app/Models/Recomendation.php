@@ -7,6 +7,7 @@ class Recomendation extends Model {
 
     protected $table = "recomendation";
     protected $primaryKey = "recomendationID";
+    protected $foreignKey = "scoreComponentsID";
 
     protected $fillable = [
         "recomendationID",

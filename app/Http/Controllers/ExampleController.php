@@ -15,7 +15,6 @@ class ExampleController extends Controller
     }
 
     public function show(){
-        //abort(403, 'Forbidden');
-        return 'shhwo';
+        return response()->json(['Result' => 'Working API'], 200);
     }
 }

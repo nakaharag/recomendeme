@@ -48,33 +48,33 @@ CREATE TABLE `recomendeme`.`alsobought` (
 
  ---
 
-  insert into recomendeme.alsobought (ProductID, recommendation, customersWhoAlsoBuyed)
+ insert into recomendeme.alsobought (ProductID, recommendation, customersWhoAlsoBuyed)
   values
-("Raclette Courdavault","20"),
-("Camembert Pierrot","19"),
-("Jack's New England Clam Chowder","18"),
-("Gorgonzola Telino","17"),
-("Chai","17"),
-("Scottish Longbreads","17"),
-("Tourtière","16"),
-("Pâté chinois","16"),
-("Tarte au sucre","15"),
-("Steeleye Stout","15"),
-("Boston Crab Meat","15"),
-("Flotemysost","15"),
-("Rössle Sauerkraut","15"),
-("Gnocchi di nonna Alice","14"),
-("Lakkalikööri","14"),
-("Teatime Chocolate Biscuits","14"),
-("Pavlova","14"),
-("Alice Mutton","14"),
-("Chang","14"),
-("Manjimup Dried Apples","14"),
-("Rhönbräu Klosterbier","14"),
-("Ikura","14"),
-("Filo Mix","14"),
-("Konbu","13"),
-("Ipoh Coffee","13");
+("Guarana", "Raclette Courdavault","20"),
+("Guarana", "Camembert Pierrot","19"),
+("Guarana", "Jack's New England Clam Chowder","18"),
+("Guarana", "Gorgonzola Telino","17"),
+("Guarana", "Chai","17"),
+("Guarana", "Scottish Longbreads","17"),
+("Guarana", "Tourtière","16"),
+("Guarana", "Pâté chinois","16"),
+("Guarana", "Tarte au sucre","15"),
+("Guarana", "Steeleye Stout","15"),
+("Guarana", "Boston Crab Meat","15"),
+("Guarana", "Flotemysost","15"),
+("Guarana", "Rössle Sauerkraut","15"),
+("Guarana", "Gnocchi di nonna Alice","14"),
+("Guarana", "Lakkalikööri","14"),
+("Guarana", "Teatime Chocolate Biscuits","14"),
+("Guarana", "Pavlova","14"),
+("Guarana", "Alice Mutton","14"),
+("Guarana", "Chang","14"),
+("Guarana", "Manjimup Dried Apples","14"),
+("Guarana", "Rhönbräu Klosterbier","14"),
+("Guarana", "Ikura","14"),
+("Guarana", "Filo Mix","14"),
+("Guarana", "Konbu","13"),
+("Guarana", "Ipoh Coffee","13");
 
  ---
 

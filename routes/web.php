@@ -37,4 +37,12 @@ $router->group(['prefix' => 'api/v1'], function () use ($router) {
 
     // Matches "/api/users
     $router->get('users', 'UserController@allUsers');
+
+    // INF 332 17/10/2020
+    $router->get('produtos/similares/{CustomerID}', 'SimilarityController@show');
+    
+    $router->get('produtos/recomendados/{CustomerID}', 'RecomendationController@showRecomendations');
+
+    $router->get('produtos/comprados/{ProductID}', 'RecomendationController@showProducts');
+
 });
